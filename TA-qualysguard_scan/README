@@ -1,0 +1,9 @@
+# Technology Addon for Qualysguard scans
+
+## Credits
+* Author: Aplura, LLC
+* Version: 20140218
+* Sourcetypes: qualysguard:scan
+* Has index-time operations: Yes, the props.conf contains timestamping and line breaking
+
+Depends on the input from IA-qualysguard_scan

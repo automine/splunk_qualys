@@ -1,0 +1,8 @@
+# Pretty simple:
+# username: the username for your qualys account. Make sure the user has access to the API
+# password: the password for your qualys account.
+# days: how far back to look for finished reports that have not been indexed.
+[qualys]
+username = myuser
+password = mypassword
+days = 30

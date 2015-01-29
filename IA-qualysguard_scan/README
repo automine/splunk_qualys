@@ -1,0 +1,27 @@
+# Input for Qualysguard scans
+
+## Credits
+* Author: Aplura, LLC
+* Version: 20140218
+* Produces Sourcetypes: qualysguard:scan
+
+## Using
+* You need to have an account on the Qualysguard system that has API access
+* Copy the qualys.conf.example to local/qualys.conf and edit it with the username and password
+* Copy the inputs.conf to local/inputs.conf and enable the input for the correct OS
+* You may need to adjust the interval for the input, depending on how often you are running scans
+
+## Other info:
+### API
+Uses API V1 from Qualysguard. More info:
+http://www.qualys.com/docs/qualysguard-api-v1-user-guide.pdf
+
+Uses the following URLS:
+REPORT_LIST_URL = "https://qualysapi.qualys.com/msp/scan_report_list.php"
+REPORT_FETCH_URL = "https://qualysapi.qualys.com/msp/scan_report.php"
+
+### Report list file
+The input keeps track of the reports it has seen. A list of the report references can be found in:
+
+$SPLUNK_HOME/var/lib/splunk/persistentstorage/qualys
+
